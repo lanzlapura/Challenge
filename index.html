@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+    <script src="firebase.js" type="module"></script>
+    <script src="./script.js"  type="module"></script>
+</head>
+<body>
+    <div class="background-image">
+        <img src="./pictures/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg.jpg"> 
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                TODO
+            </div>
+            <div class="theme">
+                <img src="./pictures/icons8-sun-50-2.png">
+            </div>
+        </div>
+        <div class="newToDo">
+            <div class="check">
+                <div class="check-mark">
+                    
+                </div>
+            </div>
+            <div class="newToDoInput">
+                <form id="get">
+                    <input id="toDoInput" type="text" placeholder="Create a new To Do..."/>
+                </form>
+            </div>
+        </div>
+        <div class="toDoItemsWrapper">
+            <div class="toDoItems">
+                <div class="toDoItem">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="./pictures/check.png">
+                        </div>
+                    </div>
+                    <div class="toDoText">
+                        sleep
+                    </div>
+                </div>
+                <div class="toDoItem">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="./pictures/check.png">
+                        </div>
+                    </div>
+                    <div class="toDoText">
+                        sleep
+                    </div>
+                </div>
+                <div class="toDoItem">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="./pictures/check.png">
+                        </div>
+                    </div>
+                    <div class="toDoText">
+                        sleep
+                    </div>
+                </div>
+            </div>
+            <div class="toDoItemsInfo">
+                <div class="itemsLeft" id="itemsLeftCounter">
+                    5 items left
+                </div>
+                <div class="itemStatus">
+                    <span id="filterAll" class="active">All</span>
+                    <span id="filterActive">Active</span>
+                    <span id="filterCompleted">Completed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
